@@ -1,0 +1,180 @@
+:root {
+  --gray0: #f8f8f8;
+  -gray1: #dbe1e8;
+  --gray2: #b2becd;
+  --gray3: #6c7983;
+  --gray4: #454e56;
+  --gray5: #2a2e35;
+  --gray6: #12181b;
+  --blue: #0084a5;
+  --black: #000000;
+  --white: #ffffff;
+  --yellow: #fff565
+} 
+
+.light {
+  --bg: var(--gray0);
+  --bg-nav: linear-gradient(to right, var(--gray1), var(--gray3));
+  --bg-dropdown: var(--gray0);
+  --text: var(--gray6);
+  --border-color: var(--black);
+  --bg-solar: var(--yellow);
+}
+
+.dark {
+  --bg: var(--gray5);
+  --bg-nav: linear-gradient(to right, var(--gray5), var(--gray6));
+  --bg-dropdown: var(--gray6);
+  --text: var(--gray0);
+  --border-color: var(--white);
+  --bg-solar: var(--blue);
+
+}
+
+.head-text {
+  text-align: center;
+  margin-top: 5rem;
+  color: var(--text);
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container1 {
+  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.175em 0.5em;
+  border-radius: 33px;
+  width: 10rem;
+  margin: 2rem;
+  padding: 4rem;
+  text-align: center;
+  color: var(--text);
+  background: var(--bg);
+  transition: 0.5s;
+}
+
+.container1:hover {
+  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.175em 0.5em;
+  border-radius: 33px;
+  position: relative;
+  bottom: 15px;
+  transform: translateY(-10px);
+  width: 10rem;
+  margin: 2rem;
+  padding: 4rem;
+  text-align: center;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.container1 img {
+  width: 80%;
+  color: var(--text);
+}
+
+/*!Scrolling Imgaes*/
+
+.parallax {
+  padding-top: 19%;
+  min-height: 900px;
+  background: transparent;
+  text-align: center;
+}
+
+.heading {
+  font-size: 50px;
+  padding-left: 10%;
+  font-weight: bolder;
+  text-align: left;
+  padding: 25px;
+  color: var(--text);
+  z-index: 2;
+  position: relative;
+}
+
+.parallax p {
+  font-size: 40px;
+  font-weight: normal;
+  text-align: left;
+  padding-left: 10%;
+  padding: 25px;
+  color: var(--text);
+  z-index: 3;
+  position: relative;
+}
+
+.parallax button {
+  font-family: "Montserrat", Open-Sans;
+  font-weight: bolder;
+  padding: 10px;
+  font-size: 16px;
+  color: var(--text);
+  border: 0 ;
+  border-radius: 33px;
+  text-decoration: none;
+  background-color: var(--bg);
+  list-style: none;
+  z-index: 4;
+  position: relative;
+  transition: all 0.8s;
+  top: 7rem;
+  align-items: center;
+}
+
+.parallax button:hover {
+  color: black;
+  background-color: white;
+}
+
+/*!End Scrolling Image*/
+
+@media screen and (max-width: 1037px) {
+  header {
+    padding: 1em;
+    width: 100%;
+    background: var(--bg-nav);
+    padding-bottom: 3.5em;
+    text-align: center;
+    clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
+  }
+
+  .strip1 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    width: 50rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container1 {
+  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.175em 0.5em;
+  border-radius: 33px;
+  width: 30rem;
+  margin: 2rem;
+  padding: 4rem;
+  align-content: center;
+  text-align: center;
+  color: var(--text);
+  background: var(--bg);
+}
+.container1 img {
+  width: 40%;
+  color: var(--text);
+}
+
+  img {
+    width: 50%;
+    height: 50%;
+  }
+  
+}
